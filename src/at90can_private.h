@@ -45,10 +45,17 @@
 
 // ----------------------------------------------------------------------------
 
-#if (defined (__AVR_AT90CAN32__) || \
-	 defined (__AVR_AT90CAN64__) || \
-	 defined (__AVR_AT90CAN128__)) && \
-	 BUILD_FOR_AT90CAN == 1
+#if BUILD_FOR_AT90CAN == 1
+
+#if defined(__AVR_ATmega16M1__) || \
+    defined(__AVR_ATmega32M1__) || \
+    defined(__AVR_ATmega64M1__) || \
+    defined(__AVR_ATmega32C1__) || \
+    defined(__AVR_ATmega64C1__)
+#define CAN_MOB_COUNT 6
+#else // AT90CAN
+#define CAN_MOB_COUNT 15
+#endif
 
 #if F_CPU != 16000000UL
 	#error	only 16 MHz for F_CPU supported!

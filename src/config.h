@@ -32,6 +32,7 @@
 /* Global settings for building the can-lib.
  *
  * Select ONE CAN controller for which you are building the can-lib. 
+ * Set SUPPORT_AT90CAN to 1 to enable ATmega M1 and C1 support
  */
 #define	SUPPORT_MCP2515			1
 #define	SUPPORT_AT90CAN			0

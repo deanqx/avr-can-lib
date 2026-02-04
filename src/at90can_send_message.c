@@ -92,7 +92,7 @@ uint8_t at90can_send_message(const can_t *msg)
 {
 	// check if there is any free MOb
 	uint8_t mob = _find_free_mob();
-	if (mob >= 15)
+	if (mob >= CAN_MOB_COUNT)
 		return 0;
 	
 	// load corresponding MOb page ...
