@@ -23,6 +23,7 @@ Features
 * Unterstützung des MCP2515
 * Unterstützung des SJA1000 (für AVRs mit oder ohne externem Bus-Interface!)
 * Unterstützung der AT90CAN-Reihe
+* Unterstützung der ATmegaxxM1/C1-Reihe (ATmega16M1/ATmega32M1/ATmega64M1/ATmega32C1/ATmega64C1)
 * Aufbau als Library, damit werden nur die benötigen Funktionen verwendet
 * geringer Resourcen-Verbrauch
 
